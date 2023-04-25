@@ -4,10 +4,10 @@ body {
     background-color: #f2f6ff;
 }
 
-    {
+/* {
     box-sizing: border-box;
 
-}
+} */
 
 header {
     background-color: white;
@@ -37,7 +37,7 @@ header .left img {
 
 header .right {
     display: flex;
-    align align-items: center;
+    align-items: center;
 }
 
 header .right p {
@@ -88,38 +88,81 @@ main p img {
     color: white;
 }
 
-.post {
-    margin: 40px 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
 
-.post .post {
-    width: 30%;
-    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.1);
-    margin: 10px;
-    border-radius: 5px;
+.card-container {
+    display: inline-block;
+    cursor: pointer;
     overflow: hidden;
-    border: 1px solid rgba(0, 168, 255, .3);
+    width: calc(30% - 1%);
+    height: 400px;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-bottom: 20px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 168, 255, 0.3);
+    text-decoration: none;
+
 }
 
-.post .post img {
-
-    width: 50%;
+.image-section {
+    height: 176px;
+    width: 100%
 }
 
-.post .post content {
-    padding: 20px;
-    background-color: white;
+.image {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
-.post .post content p span {
+.text-section {
+    padding: 10px 24px;
+}
+
+.title {
+    font-size: 18px;
+    text-align: left;
+    margin: 0;
+    font-weight: 600;
+    color: #000;
+}
+
+.author-container {
+    padding-top: 4px;
+}
+
+.author {
     color: #0096ff;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 500;
 }
 
-.flex-container {
-    display: flex;
+.date {
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.content {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.43;
+    color: rgba(0, 0, 0, 0.6);
+    margin: 4px 0;
+}
+
+.posts {
+    width: 33.3%;
+    display: inline-block;
+}
+
+.image-section {
+    Height: 176px;
+    Width: 100%;
 }
 
 footer {
